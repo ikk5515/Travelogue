@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-REPOSITORY=/home/gksdydwns/app
+REPOSITORY=/home/gksdydwns/app/Travelogue
 cd $REPOSITORY
 
 APP_NAME=Travelogue-0.0.1-SNAPSHOT.jar
