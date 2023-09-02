@@ -42,7 +42,7 @@
 
 .box > img {
    width: 200%;
-   height: calc(200% -10vh);
+   height: calc(200% - 10vh);
    object-fit: cover;
    transition: .5s;
 }
