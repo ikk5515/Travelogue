@@ -73,25 +73,135 @@
    margin-left: 55px;
 }
 
-.main_section p{
+.main_section h2{
    font-family: "Montserrat", sans-serif;
    font-size: 55px;
    font-weight: 700;
-   line-height: 40px;
+   animation: slideRight 1s ease-in-out forwards;
+   transform: translateX(-50%);
+   opacity: 0;
+   transition: .8s;
+}
+
+.main_section h2.active{
+   transform: translateX(0);
+   opacity: 1
 }
 
 .main_planner{
-   text-align: right;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
 }
 
 .planner_box{
-   background-color: rgb(209, 206, 206);
-   width: 500px;
-   height: 500px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: #008aff;
+   border-radius: 10px;
+   width: 700px;
+   height: 600px;
    float: right;
    margin-top: -25%;
-   margin-right: 100px;
+   margin-right: 40px;
 }
+
+.wrapper{
+   width: 450px;
+   background: #fff;
+   border-radius: 10px;
+   padding: 25px;
+
+}
+
+.wrapper .nav{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 30px;
+}
+
+.wrapper .nav .current-date {
+   font-size: 24px;
+   font-weight: 600;
+}
+
+button {
+   /* button 요소에 기본적으로 설정되는 스타일 속성 초기화 */
+   border: none;
+   outline: none;
+   background-color: transparent;
+   padding: 0;
+   cursor: pointer;
+ }
+
+.header .nav .button{
+   width: 38px;
+   height: 38px;
+   font-size: 30px;
+   color: #878787;
+}
+
+.header .nav button:hover{
+   background: #f2f2f2;
+}
+
+.calendar ul{
+   display: flex;
+   list-style: none;
+   flex-wrap: wrap;
+   text-align: center;
+   margin-right: 40px;
+}
+
+.calendar .weeks li{
+   font-weight:  500;
+}
+
+.calendar .days{
+   margin-bottom: 20px;
+}
+
+.calendar ul li {
+   width: calc(100% / 7);
+   position: relative;
+}
+
+.calendar .days li{
+   z-index: 1;
+   margin-top:  30px;
+   cursor: pointer;
+}
+
+.days li.inactive {
+   color: #aaa;
+}
+
+.days li.active{
+   color: #fff;
+}
+
+.calendar .days li::before {
+   position: absolute;
+   content: '';
+   height: 40px;
+   width: 40px;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   border-radius: 50%;
+   z-index: -1;
+}
+
+.days li:hover::before {
+   background: #f2f2f2;
+}
+.days li.active::before{
+   background: #008aff;
+}
+
 
 .contact_title{
    font-family: "Montserrat", sans-serif;
