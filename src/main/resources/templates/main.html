@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="../static/css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Document</title>
 </head>
 <body>
@@ -51,13 +52,35 @@
         </div>
 
         <div class="main_section">
-            <p>원하시는 여행 장소를 찾고</p>
-            <p>멋진 일정을 계획해보세요!</p>
+            <h2>원하시는 여행 장소를 찾고<br>
+                멋진 일정을 계획해보세요! 
+            </h2>
         </div>
 
         <div class="main_planner">
             <div class="planner_box">
-                <img src="">
+                <div class="wrapper">
+                    <header>
+                        <div class="nav">
+                            <button id="prev" class="material-icons"> chevron_left </button>
+                            <p class="current-date"></p>
+                            <button id="next" class="material-icons">chevron_right</button>
+                        </div>
+                    </header>
+                    <div class="calendar">
+                        <ul class="weeks">
+                            <li>Sun</li>
+                            <li>Mon</li>
+                            <li>Tue</li>
+                            <li>Wed</li>
+                            <li>Thu</li>
+                            <li>Fri</li>
+                            <li>Sat</li>
+                        </ul>
+                        <ul class="days">
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -79,7 +102,7 @@
 
     </div>
 
-<!--    <script type="text/javascript" src="main.js"></script>-->
+<script type="text/javascript" src="../js/main.js"></script>
 
 </body>
 </html>
