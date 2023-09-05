@@ -8,10 +8,30 @@
    text-decoration-line: underline;
 }
 
+@media(max-width:700px){
+   .intro_title{
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      margin-top:1%;
+      text-align: right;
+      margin-right: 20px;
+      text-decoration-line: underline;
+   }
+}
+
 .meun_list{
    text-align: center;
    word-spacing: 60px;
    margin-top: 3%;
+}
+
+@media(max-width:700px){
+   .meun_list{
+      text-align: center;
+      word-spacing: 10px;
+      margin-top: 3%;
+   }
 }
 
 .meun_list a {
@@ -22,12 +42,32 @@
    color:black;
 }
 
+@media(max-width:700px){
+   .meun_list a {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      font-size: 10px;
+      text-decoration: none;
+      color:black;
+   }
+}
+
 .image{
    display: flex;
    width: 100%;
    padding: 4% 2%;
    box-sizing: border-box;
    height: 70vh;
+}
+
+@media(max-width:700px){
+   .image{
+      display: flex;
+      width: 100%;
+      padding: 4% 2%;
+      box-sizing: border-box;
+      height: 40vh;
+   }
 }
 
 .box{
@@ -38,6 +78,18 @@
    margin-top: -40px;
    box-shadow: 0 20px 30px rgba(0,0,0,.1);
    line-height: 0;
+}
+
+@media(max-width:700px){
+   .box{
+      flex: 1;
+      overflow: hidden;
+      transition:  .5s;
+      margin: 0 2%;
+      margin-top: -20px;
+      box-shadow: 0 20px 30px rgba(0,0,0,.1);
+      line-height: 0;
+   }
 }
 
 .box > img {
@@ -54,7 +106,7 @@
 }
 
 .main{
-   margin-top:30%;
+   margin-top:50%;
 }
 
 .main_title{
@@ -64,13 +116,31 @@
    font-size: 100px;
    margin-left: 50px;
    text-decoration-line: underline;
+}
 
+@media(max-width:700px){
+   .main_title{
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      text-align: left;
+      font-size: 45px;
+      margin-left: 20px;
+      text-decoration-line: underline;
+   }
 }
 
 .main_section{
    text-align: left;
    margin-top: 10%;
    margin-left: 55px;
+}
+
+@media(max-width:700px){
+   .main_section{
+      text-align: left;
+      margin-top: 4%;
+      margin-left: 20px;
+   }
 }
 
 .main_section h2{
@@ -81,6 +151,18 @@
    transform: translateX(-50%);
    opacity: 0;
    transition: .8s;
+}
+
+@media(max-width:700px){
+   .main_section h2{
+      font-family: "Montserrat", sans-serif;
+      font-size: 25px;
+      font-weight: 700;
+      animation: slideRight 1s ease-in-out forwards;
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: .8s;
+   }
 }
 
 .main_section h2.active{
@@ -108,12 +190,38 @@
    margin-right: 40px;
 }
 
+@media(max-width:700px){
+   .planner_box{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #008aff;
+      border-radius: 10px;
+      width: 350px;
+      height: 400px;
+      float: right;
+      margin-top: -3%;
+      margin-right: 1px;
+   }
+}
+
 .wrapper{
    width: 450px;
    background: #fff;
    border-radius: 10px;
    padding: 25px;
 
+}
+
+@media(max-width:700px){
+   .wrapper{
+      width: 280px;
+      height: 300px;
+      background: #fff;
+      border-radius: 10px;
+      padding: 25px;
+   
+   }
 }
 
 .wrapper .nav{
@@ -123,9 +231,27 @@
    margin-bottom: 30px;
 }
 
+@media(max-width:700px){
+   .wrapper .nav{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: -25px;
+   }
+}
+
 .wrapper .nav .current-date {
    font-size: 24px;
    font-weight: 600;
+}
+
+@media(max-width:700px){
+   .wrapper .nav .current-date {
+      font-size: 18px;
+      font-weight: 600;
+      margin-top:15px;
+   }
+   
 }
 
 button {
@@ -156,9 +282,11 @@ button {
    margin-right: 40px;
 }
 
+
 .calendar .weeks li{
    font-weight:  500;
 }
+
 
 .calendar .days{
    margin-bottom: 20px;
@@ -169,11 +297,34 @@ button {
    position: relative;
 }
 
+@media(max-width:700px){
+   .calendar ul li {
+      width: calc(100% / 7);
+      position: relative;
+      word-spacing: 30px;
+   }
+}
+
+@media(max-width:700px){
+   .calendar .weeks {
+      font-size: 13px;
+   }
+}
+
 .calendar .days li{
    z-index: 1;
    margin-top:  30px;
    cursor: pointer;
 }
+
+@media(max-width:700px){
+   .calendar .days li{
+      z-index: 1;
+      margin-top: 15px;
+      cursor: pointer;
+   }
+}
+
 
 .days li.inactive {
    color: #aaa;
@@ -198,7 +349,7 @@ button {
 .days li:hover::before {
    background: #f2f2f2;
 }
-.days li.active::before{
+.days li:active::before{
    background: #008aff;
 }
 
@@ -209,12 +360,32 @@ button {
    font-weight: 700;
    text-align: right;
    margin-top: 30%;
-   margin-right:90px;
+   margin-right:30px;
    text-decoration-line: underline;
+}
+
+@media(max-width:700px){
+   .contact_title{
+      font-family: "Montserrat", sans-serif;
+      font-size: 45px;
+      font-weight: 700;
+      text-align: right;
+      margin-top: 40%;
+      margin-right:10px;
+      text-decoration-line: underline;
+   }
 }
 
 .contact_text{
    background-color: black;
+}
+
+@media(max-width:700px){
+   .contact_text{
+      background-color: black;
+      margin-top: 10px;
+      height: 60px;
+   }
 }
 
 .contact_text p {
@@ -224,6 +395,17 @@ button {
    color:white;
    font-size: 20px;
    line-height: 60px;
+}
+
+@media(max-width:700px){
+   .contact_text p {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      text-align: center;
+      color:white;
+      font-size: 12px;
+      line-height: 30px;
+   }
 }
 
 
