@@ -1,3 +1,7 @@
+html {
+   scroll-behavior: smooth;
+ }
+
 .intro_title{
    font-family: "Montserrat", sans-serif;
    font-size: 40px;
@@ -14,21 +18,23 @@
       font-size: 16px;
       font-weight: 500;
       margin-top:1%;
-      text-align: right;
-      margin-right: 20px;
+      text-align: center;
+      margin-right: -10px;
       text-decoration-line: underline;
    }
 }
 
 .meun_list{
-   text-align: center;
-   word-spacing: 60px;
+   text-align: left;
+   margin-left: 60px;
+   word-spacing: 45px;
    margin-top: 3%;
 }
 
 @media(max-width:700px){
    .meun_list{
-      text-align: center;
+      text-align: left;
+      margin-left: 20px;
       word-spacing: 10px;
       margin-top: 3%;
    }
@@ -105,16 +111,13 @@
    height: 100%;
 }
 
-.main{
-   margin-top:50%;
-}
-
 .main_title{
    font-family: "Montserrat", sans-serif;
    font-weight: 700;
    text-align: left;
    font-size: 100px;
    margin-left: 50px;
+   margin-top: 200px;
    text-decoration-line: underline;
 }
 
@@ -124,6 +127,7 @@
       font-weight: 700;
       text-align: left;
       font-size: 45px;
+      margin-top: 30px;
       margin-left: 20px;
       text-decoration-line: underline;
    }
@@ -131,8 +135,8 @@
 
 .main_section{
    text-align: left;
-   margin-top: 10%;
-   margin-left: 55px;
+   margin-top: 8%;
+   margin-left: 50px;
 }
 
 @media(max-width:700px){
@@ -183,11 +187,11 @@
    justify-content: center;
    background: #008aff;
    border-radius: 10px;
-   width: 700px;
-   height: 600px;
+   width: 550px;
+   height: 520px;
    float: right;
    margin-top: -25%;
-   margin-right: 40px;
+   margin-right: 60px;
 }
 
 @media(max-width:700px){
@@ -198,10 +202,10 @@
       background: #008aff;
       border-radius: 10px;
       width: 350px;
-      height: 400px;
+      height: 370px;
       float: right;
       margin-top: -3%;
-      margin-right: 1px;
+      margin-right: 4px;
    }
 }
 
@@ -376,23 +380,12 @@ button {
    }
 }
 
-.contact_text{
-   background-color: black;
-}
-
-@media(max-width:700px){
-   .contact_text{
-      background-color: black;
-      margin-top: 10px;
-      height: 60px;
-   }
-}
-
 .contact_text p {
    font-family: "Montserrat", sans-serif;
    font-weight: 500;
-   text-align: center;
-   color:white;
+   text-align: left;
+   margin-left: 3%;
+   color:black;
    font-size: 20px;
    line-height: 60px;
 }
@@ -402,7 +395,7 @@ button {
       font-family: "Montserrat", sans-serif;
       font-weight: 500;
       text-align: center;
-      color:white;
+      color:black;
       font-size: 12px;
       line-height: 30px;
    }
