@@ -21,7 +21,7 @@ body {
 
 .Login_text {
   margin-top: 10%;
-  margin-left: 5%;
+  margin-left: 3%;
   font-family: "Montserrat", sans-serif;
 }
 .Login_text .h2 {
@@ -31,8 +31,12 @@ body {
   line-height: 160%;
 }
 
+.Login_input {
+  font-family: "Montserrat", sans-serif;
+}
 .Login_input p {
   margin-left: 30px;
+  font-weight: 400;
 }
 .Login_input input {
   background-color: #f6f5f7;
@@ -43,20 +47,87 @@ body {
   margin-bottom: 3%;
 }
 
-.signup_section {
-  margin-top: -42.1%;
-  margin-left: 49%;
-  width: 490px;
-  height: 493px;
+.signup_img img {
+  width: 57%;
+  height: 500px;
+  margin-top: -365px;
+  margin-left: 45.7%;
   border-radius: 0px 20px 20px 0px;
-  background-color: skyblue;
 }
 
-.signup_text {
-  color: white;
-  font-family: "Montserrat", sans-serif;
+@media (min-width: 1024px) {
+  .signup_img img {
+    width: 400.7px;
+    height: 440.7px;
+    margin-top: -339px;
+    margin-left: 49.7%;
+    border-radius: 0px 20px 20px 0px;
+  }
 }
-.signup_text h2 {
-  padding-top: 23%;
-  padding-left: 40%;
+@media (min-width: 335px) and (max-width: 757px) {
+  .Login_box {
+    width: 60%;
+    height: 65%;
+    background: #fff;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+
+  .Login_text {
+    margin-top: 10%;
+    margin-left: 3%;
+    font-size: 13px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+  }
+  .Login_text .h2 {
+    font-weight: 400;
+  }
+  .Login_text .p {
+    line-height: 160%;
+  }
+
+  .Login_input {
+    margin-top: 50px;
+  }
+  .Login_input p {
+    margin-left: 30px;
+  }
+  .Login_input input {
+    background-color: #f6f5f7;
+    border: 0px;
+    width: 80%;
+    height: 20px;
+    display: inline-block;
+    margin-bottom: 3%;
+  }
+
+  .Login_button {
+    margin-top: 10px;
+  }
+  .Login_button button {
+    color: white;
+    width: 70px;
+    height: 35px;
+    border: #fff;
+    background-color: rgba(33, 169, 253, 0.22);
+    border-radius: 20px 20px 20px 20px;
+  }
+  .Login_button:hover ::after {
+    background-color: #00e1ff;
+    transition: all 0.3s ease;
+  }
+  .Login_button:hover :after {
+    left: 0;
+    width: 100%;
+  }
+
+  .signup_img img {
+    width: 253px;
+    height: 150px;
+    margin-top: 47px;
+    margin-left: -12.5%;
+    border-radius: 0px 0px 20px 20px;
+  }
 }
