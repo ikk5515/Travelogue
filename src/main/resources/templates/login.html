@@ -3,42 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<link rel="stylesheet" href="../static/scss/user.css"> -->
+   <!-- <link rel="stylesheet" href="../static/scss/user.css"> -->
     <link rel="stylesheet" href="/scss/user.css"> 
     <title>Login</title>
 </head>
 <body>
-    <hr> 
-        <div class="Login_box">
-          <div class="Login_section">
-            <div class="Login_text">
-                <h2>
-                    로그인이 필요합니다
-                </h2>
-                <p>
-                    아직 회원이 아니세요?<br>
-                    회원가입을 통해 다양한 서비스를 즐겨보세요!
-                </p>
-               <div class="Login_input">
-                 <input type="text" placeholder="아이디"/><br>
-                 <input type="password" placeholder="비밀번호"/>
-               </div> 
-
-               <div class="Login_button">
-                <button>로그인</button>
-               </div>
-
-            </div>
-          </div>
-
-        <div class="signup_section">
-          <div class="signup_img">
-           <!--<img src="../img/seoul.jpeg"/-->
-           <img src="/img/seoul.jpeg"/>
-          </div>
+    <hr>
+    <div class="wrap">
+      <div class="form-wrap">
+        <div class="button-wrap">
+            <div id="btn"></div>    
+            <button type="button" class="togglebtn" onclick="login()">로그인</button>
+            <button type="button" class="togglebtn" onclick="register()">회원가입</button>
         </div>
-      </div>
+      
+      <form id="login"  class="input-group">
+          <input type="email" class="input-field" placeholder="이메일" name="userEmail" maxlength="50">
+          <input type="password" class="input-field" placeholder="비밀번호" name="userPassword" maxlength="20" >
+          <button class="submit" style="margin-top:60px;margin-left:20px;">로그인</button>
+      </form>
+      
+      <form id="register"  class="input-group">
+          <input type="email" class="input-field" placeholder="이메일" name="userEmail" maxlength="50">
+          <input type="password" class="input-field" placeholder="비밀번호" name="userPassword" maxlength="20" >
+          <input type="text" class="input-field" placeholder="이름" name="userName" maxlength="20">
+          <button class="submit" style="margin-top:60px;margin-left:20px;">회원가입</button>
+      </form>
 
-    <!-- <link rel="stylesheet" href="../static/js/login.js"> -->
+      <div class="image"><img src="../static/img/hanok.webp"></div> 
+     <!-- <div class="image"><img src="/img/hanok.webp"></div> --> 
+  </div>
+</div>
+
+   <!-- <script type="text/javascript" src="../static/js/login.js"></script> -->
+   <script type="text/javascript" src="/js/login.js"></script> 
 </body>
 </html>
