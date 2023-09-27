@@ -18,7 +18,6 @@ body {
     background-position: center;
     background-size: cover;
     position: absolute;
-    
 }
 
 .form-wrap {
@@ -31,13 +30,12 @@ body {
     padding: 5px;
     overflow: hidden;
     margin-top:8%;
-    
 }
 
 .button-wrap {
     width: 230px;
     margin-top: 4%;
-    margin-left: 560px;
+    margin-left: 580px;
     position: relative;
     border-radius: 30px;
     border:5px;
@@ -45,7 +43,10 @@ body {
 
 .togglebtn {
 	text-align: center;
-    padding: 10px 28px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 15px;
     cursor: pointer;
     background: transparent;
     border: 0;
@@ -57,10 +58,11 @@ body {
     top: 0;
     left: 0;
     position: absolute;
-    width: 110px;
-    height: 100%;
-    background: linear-gradient(to right,white,black);
-    border-radius: 30px;
+    background-color: black;
+    width: 95px;
+    margin-top: 18%;
+    height: 10%;
+    outline:invert;
     transition: .5s;
 }
 
@@ -85,23 +87,20 @@ body {
     width: 100%;
     padding: 10px 0;
     margin: 5px 0;
-    border:5px;
-    border-bottom: 1px solid #999;
-    outline: none;
-    background: transparent;
-    
+    border:2px solid #999;
+    outline: none;    
 }
 
 .submit {
-    width: 85%;
+    width: 88%;
+    color: $textColor;
     padding: 10px 30px;
     cursor: pointer;
     display: block;
-    margin: auto;
-    background: linear-gradient(to right, white,black);
+    background-color: black; 
+    margin-left: 200px;
     border: 0;
     outline: none;
-    border-radius: 30px;
 }
 
 .checkbox {
@@ -120,12 +119,129 @@ span {
 }
 
 #register {
-    margin-top: -3%;
+    margin-top: -6%;
     left: -550px;
 }
-
 }
 
 @include mobile{
-  
+    body {
+        overflow: hidden;
+        font-family: sans-serif;
+        background-color: $backColor;
+    }
+    
+    .wrap {
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        
+    }
+    
+    .form-wrap {
+        width: 60%;
+        height: 60%;
+        border-radius: 30px;
+        position: relative;
+        margin: 6% auto;
+        background: #fff;
+        padding: 5px;
+        overflow: hidden;
+        margin-top:8%;
+        
+    }
+    
+    .button-wrap {
+        width: 230px;
+        margin-top: 4%;
+        margin-left: 560px;
+        position: relative;
+        border-radius: 30px;
+        border:5px;
+    }
+    
+    .togglebtn {
+        text-align: center;
+        padding: 10px 28px;
+        cursor: pointer;
+        background: transparent;
+        border: 0;
+        outline: none;
+        position: relative;
+    }
+    
+    #btn {
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 110px;
+        height: 100%;
+        background: linear-gradient(to right,white,black);
+        border-radius: 30px;
+        transition: .5s;
+    }
+    
+    .image{
+        img{
+            position: absolute;
+            margin-top: -15%;
+            margin-left: -1%;
+            width: 450px;
+            height: 500px;
+            z-index: 3;
+        }
+    }
+    
+    .input-group {
+        top: 180px;
+        position: absolute;
+        width: 280px;
+        transition: .5s;
+    }
+    
+    .input-field {
+        margin-left: 500px;
+        width: 100%;
+        padding: 10px 0;
+        margin: 5px 0;
+        border:5px;
+        border-bottom: 1px solid #999;
+        outline: none;
+        background: transparent;
+        
+    }
+    
+    .submit {
+        width: 85%;
+        padding: 10px 30px;
+        cursor: pointer;
+        display: block;
+        margin: auto;
+        background: linear-gradient(to right, white,black);
+        border: 0;
+        outline: none;
+        border-radius: 30px;
+    }
+    
+    .checkbox {
+        margin: 30px 10px 30px 0;
+    }
+    
+    span {
+        color: #777;
+        font-size: 12px;
+        bottom: 68px;
+        position: absolute;
+    }
+    
+    #login {
+        left: 550px;
+    }
+    
+    #register {
+        margin-top: -3%;
+        left: -600px;
+    }
 }
