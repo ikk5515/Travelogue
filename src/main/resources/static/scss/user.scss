@@ -59,6 +59,7 @@ body {
     left: 0;
     position: absolute;
     background-color: black;
+    border-radius: 30px;
     width: 95px;
     margin-top: 18%;
     height: 10%;
@@ -95,10 +96,11 @@ body {
     width: 88%;
     color: $textColor;
     padding: 10px 30px;
+    margin-top: 10px;
+    margin-left: 20px;
     cursor: pointer;
     display: block;
     background-color: black; 
-    margin-left: 200px;
     border: 0;
     outline: none;
 }
@@ -124,6 +126,7 @@ span {
 }
 }
 
+
 @include mobile{
     body {
         overflow: hidden;
@@ -137,7 +140,6 @@ span {
         background-position: center;
         background-size: cover;
         position: absolute;
-        
     }
     
     .form-wrap {
@@ -150,13 +152,12 @@ span {
         padding: 5px;
         overflow: hidden;
         margin-top:8%;
-        
     }
     
     .button-wrap {
         width: 230px;
         margin-top: 4%;
-        margin-left: 560px;
+        margin-left: 35px;
         position: relative;
         border-radius: 30px;
         border:5px;
@@ -164,7 +165,10 @@ span {
     
     .togglebtn {
         text-align: center;
-        padding: 10px 28px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 2px;
+        font-weight: 800;
+        padding: 15px;
         cursor: pointer;
         background: transparent;
         border: 0;
@@ -176,53 +180,53 @@ span {
         top: 0;
         left: 0;
         position: absolute;
-        width: 110px;
-        height: 100%;
-        background: linear-gradient(to right,white,black);
+        background-color: black;
+        width: 60px;
+        margin-top: 13%;
         border-radius: 30px;
+        height: 5%;
+        outline:invert;
         transition: .5s;
     }
     
     .image{
         img{
-            position: absolute;
-            margin-top: -15%;
-            margin-left: -1%;
-            width: 450px;
-            height: 500px;
-            z-index: 3;
+            margin-top: 110%;
+            margin-left: -3%;
+            width: 215px;
+            height: 180px;
         }
     }
     
     .input-group {
-        top: 180px;
+        top: 100px;
         position: absolute;
         width: 280px;
         transition: .5s;
     }
     
     .input-field {
-        margin-left: 500px;
-        width: 100%;
-        padding: 10px 0;
+        width: 60%;
+        height: 20%;
+        margin-top:3%;
+        padding: 2px 0;
         margin: 5px 0;
-        border:5px;
-        border-bottom: 1px solid #999;
+        border:2px solid #999;
+        border-radius: 30px;
         outline: none;
-        background: transparent;
-        
+        font-size: 10px;
     }
     
     .submit {
-        width: 85%;
-        padding: 10px 30px;
+        margin-top: 10%;
+        margin-left: 15%;
+        width: 30%;
+        color: $textColor;
         cursor: pointer;
         display: block;
-        margin: auto;
-        background: linear-gradient(to right, white,black);
+        background-color: black; 
         border: 0;
         outline: none;
-        border-radius: 30px;
     }
     
     .checkbox {
@@ -237,11 +241,11 @@ span {
     }
     
     #login {
-        left: 550px;
+        left: 20px;
     }
     
     #register {
-        margin-top: -3%;
-        left: -600px;
+        margin-top: -6%;
+        left: -550px;
     }
 }
