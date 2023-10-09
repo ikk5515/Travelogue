@@ -1,133 +1,239 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
-body {
-  background-color: #f6f5f7;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-family: "Montserrat", sans-serif;
-  height: 100vh;
-  margin: -20px 0 50px;
-}
-
-.Login_box {
-  width: 60%;
-  height: 60%;
-  background: #fff;
-  border-radius: 20px;
-  padding: 25px;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
-
-.Login_text {
-  margin-top: 10%;
-  margin-left: 3%;
-  font-family: "Montserrat", sans-serif;
-}
-.Login_text .h2 {
-  font-weight: 400;
-}
-.Login_text .p {
-  line-height: 160%;
-}
-
-.Login_input {
-  font-family: "Montserrat", sans-serif;
-}
-.Login_input p {
-  margin-left: 30px;
-  font-weight: 400;
-}
-.Login_input input {
-  background-color: #f6f5f7;
-  border: 0px;
-  width: 35%;
-  height: 40px;
-  display: inline-block;
-  margin-bottom: 3%;
-}
-
-.signup_img img {
-  width: 57%;
-  height: 500px;
-  margin-top: -365px;
-  margin-left: 45.7%;
-  border-radius: 0px 20px 20px 0px;
-}
-
 @media (min-width: 1024px) {
-  .signup_img img {
-    width: 400.7px;
-    height: 440.7px;
-    margin-top: -339px;
-    margin-left: 49.7%;
-    border-radius: 0px 20px 20px 0px;
+  body {
+    overflow: hidden;
+    font-family: sans-serif;
+    background-color: #f6f5f7;
+  }
+
+  .wrap {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+  }
+
+  .form-wrap {
+    width: 60%;
+    height: 60%;
+    border-radius: 30px;
+    position: relative;
+    margin: 6% auto;
+    background: #fff;
+    padding: 5px;
+    overflow: hidden;
+    margin-top: 8%;
+  }
+
+  .button-wrap {
+    width: 230px;
+    margin-top: 4%;
+    margin-left: 580px;
+    position: relative;
+    border-radius: 30px;
+    border: 5px;
+  }
+
+  .togglebtn {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 15px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+  }
+
+  #btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: black;
+    border-radius: 30px;
+    width: 95px;
+    margin-top: 18%;
+    height: 10%;
+    outline: invert;
+    transition: 0.5s;
+  }
+
+  .image img {
+    margin-top: -15%;
+    margin-left: -1%;
+    width: 450px;
+    height: 500px;
+  }
+
+  .input-group {
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: 0.5s;
+  }
+
+  .input-field {
+    margin-left: 500px;
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border: 2px solid #999;
+    outline: none;
+  }
+
+  .submit {
+    width: 88%;
+    color: white;
+    padding: 10px 30px;
+    margin-top: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+    display: block;
+    background-color: black;
+    border: 0;
+    outline: none;
+  }
+
+  .checkbox {
+    margin: 30px 10px 30px 0;
+  }
+
+  span {
+    color: #777;
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+  }
+
+  #login {
+    left: 550px;
+  }
+
+  #register {
+    margin-top: -6%;
+    left: -550px;
   }
 }
 @media (min-width: 335px) and (max-width: 757px) {
-  .Login_box {
-    width: 60%;
-    height: 65%;
-    background: #fff;
-    border-radius: 20px;
-    padding: 25px;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  body {
+    overflow: hidden;
+    font-family: sans-serif;
+    background-color: #f6f5f7;
   }
 
-  .Login_text {
-    margin-top: 10%;
-    margin-left: 3%;
-    font-size: 13px;
+  .wrap {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+  }
+
+  .form-wrap {
+    width: 60%;
+    height: 60%;
+    border-radius: 30px;
+    position: relative;
+    margin: 6% auto;
+    background: #fff;
+    padding: 5px;
+    overflow: hidden;
+    margin-top: 8%;
+  }
+
+  .button-wrap {
+    width: 230px;
+    margin-top: 4%;
+    margin-left: 35px;
+    position: relative;
+    border-radius: 30px;
+    border: 5px;
+  }
+
+  .togglebtn {
     text-align: center;
     font-family: "Montserrat", sans-serif;
-  }
-  .Login_text .h2 {
-    font-weight: 400;
-  }
-  .Login_text .p {
-    line-height: 160%;
-  }
-
-  .Login_input {
-    margin-top: 50px;
-  }
-  .Login_input p {
-    margin-left: 30px;
-  }
-  .Login_input input {
-    background-color: #f6f5f7;
-    border: 0px;
-    width: 80%;
-    height: 20px;
-    display: inline-block;
-    margin-bottom: 3%;
+    font-size: 2px;
+    font-weight: 800;
+    padding: 15px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
   }
 
-  .Login_button {
-    margin-top: 10px;
-  }
-  .Login_button button {
-    color: white;
-    width: 70px;
-    height: 35px;
-    border: #fff;
-    background-color: rgba(33, 169, 253, 0.22);
-    border-radius: 20px 20px 20px 20px;
-  }
-  .Login_button:hover ::after {
-    background-color: #00e1ff;
-    transition: all 0.3s ease;
-  }
-  .Login_button:hover :after {
+  #btn {
+    top: 0;
     left: 0;
-    width: 100%;
+    position: absolute;
+    background-color: black;
+    width: 60px;
+    margin-top: 13%;
+    border-radius: 30px;
+    height: 5%;
+    outline: invert;
+    transition: 0.5s;
   }
 
-  .signup_img img {
-    width: 253px;
-    height: 150px;
-    margin-top: 47px;
-    margin-left: -12.5%;
-    border-radius: 0px 0px 20px 20px;
+  .image img {
+    margin-top: 110%;
+    margin-left: -3%;
+    width: 215px;
+    height: 180px;
+  }
+
+  .input-group {
+    top: 100px;
+    position: absolute;
+    width: 280px;
+    transition: 0.5s;
+  }
+
+  .input-field {
+    width: 60%;
+    height: 20%;
+    margin-top: 3%;
+    padding: 2px 0;
+    margin: 5px 0;
+    border: 2px solid #999;
+    border-radius: 30px;
+    outline: none;
+    font-size: 10px;
+  }
+
+  .submit {
+    margin-top: 10%;
+    margin-left: 15%;
+    width: 30%;
+    color: white;
+    cursor: pointer;
+    display: block;
+    background-color: black;
+    border: 0;
+    outline: none;
+  }
+
+  .checkbox {
+    margin: 30px 10px 30px 0;
+  }
+
+  span {
+    color: #777;
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+  }
+
+  #login {
+    left: 20px;
+  }
+
+  #register {
+    margin-top: -6%;
+    left: -550px;
   }
 }
